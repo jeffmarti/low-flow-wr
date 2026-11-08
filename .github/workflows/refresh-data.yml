@@ -1,0 +1,85 @@
+# ==============================================================================
+# refresh-data.yml — weekly automatic refresh of the low-flow-wr app data
+# ------------------------------------------------------------------------------
+# Runs pipeline/run_pipeline.R on a GitHub-hosted runner, then commits the
+# refreshed app data (data/) and the PLSS section cache back to the repo.
+# Posit Connect Cloud republishes the app from the new commit.
+#
+# Schedule: Mondays 15:17 UTC (8:17 am Pacific daylight / 7:17 am standard) —
+# 30 minutes after wr-applications (14:47) and an hour after permit-events
+# (14:17), so the three don't hit Ecology's search page at the same time.
+# Run it by hand any time: GitHub repo -> Actions -> "Refresh low flow data"
+# -> "Run workflow".
+# ==============================================================================
+
+name: Refresh low flow data
+
+on:
+  schedule:
+    - cron: "17 15 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write          # lets the job push the refreshed data
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      LANG: C.UTF-8          # keeps the em dash in WRIA labels ("17 — Quilcene-Snow") intact
+      LC_ALL: C.UTF-8
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install R packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::dplyr
+            any::readr
+            any::stringr
+            any::readxl
+            any::httr2
+            any::xml2
+            any::curl
+            any::sf
+
+      - name: Run the data pipeline
+        run: Rscript pipeline/run_pipeline.R
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lowflow_rights.csv data/geocode_failed.csv data/data_date.txt \
+                  data/boundaries.rds pipeline/cache/section_bbox_cache.csv
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Weekly data refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Keep the run's working files for 14 days (for troubleshooting)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-work-${{ github.run_number }}
+          path: |
+            pipeline/raw/
+            pipeline/work/
+          retention-days: 14
+          if-no-files-found: ignore

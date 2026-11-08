@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+pipeline/raw/
+pipeline/work/
+rsconnect/
+
+# Left over from the old manual workflow (safe to delete)
+waterrightexport.csv
+write_data_date.R
+path/

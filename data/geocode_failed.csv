@@ -1,0 +1,27 @@
+Record Document Number,WR Doc ID,Certificate Number,Person or Organization,Status,Phase,Stage,Priority Date Claim First Use,Purpose of Use,Qi,UOM,Qa,WRIA,County,TRS,lon,lat,QQ,Q,First Source Name Listed,fail_reason
+S2-*08538CWRIS,2213194,03835,"Ogren, Rudolph",Active,Certificate,Final,08/05/1948,MI,5,CFS,,10,Pierce,T17.0N/R10.0E/25,,,,,Silver Creek,No BLM section match
+S2-25654CWRIS,2206938,S2-25654   C,Alta Silva Resort for USFS,Active,Certificate,Final,05/28/1980,"FR,DM",1,CFS,52,10,Pierce,T18.0N/R10.0E/34,,,,N2,Deep Creek,No BLM section match
+S2-28460,2223137,,USFS Snoqualmie Ranger District,Active,Certificate,Final,04/14/1992,FS,3,CFS,0,10,Pierce,T18.0N/R10.0E/06,,,SW,SW,Huckleberry Creek,No BLM section match
+S2-29307,2147608,,"Dewitt, Diane",Active,Certificate,Final,08/31/1995,DS,0.01,CFS,0.25,10,Pierce,T18.0N/R10.0E/35,,,NE,NE,Goat Creek,No BLM section match
+S2-*01991CWRIS,2214665,00322,Port Townsend City,Active,Certificate,Final,02/09/1927,"MU,CI,PO",30,CFS,0,17,Jefferson,T27.0N/R02.0W/31,,,,,Big Quilcene River,No BLM section match
+S2-*07391CWRIS,2213219,03078,ETHERIDGE F P,Active,Certificate,,08/16/1946,"ST,IR",1,CFS,,23,Lewis,T12.0N/R04.0W/13,,,,,South Fork Chehalis River,No BLM section match
+S2-*05008AMCWRIS,2213987,01731A,GRAVES F J,Active,Certificate,,10/26/1939,PO,6.95,CFS,,26,Lewis,T13.0N/R10.0E/06,,,SW,NW,Coal Creek,No BLM section match
+S2-*19329CWRIS,2210566,09688,BARANOVICH H,Active,Certificate,,10/29/1965,IR,0.01,CFS,1,28,Clark,T02.0N/R02.0E/31,,,,,Unnamed Spring,No BLM section match
+S4-*06098CWRIS,2079208,04122,GOSS E M,Active,Certificate,,08/07/1944,PO,15,CFS,,47,Chelan,T31.0N/R18.0E/10,,,,SW,Railroad Creek,No BLM section match
+S4-29435CWRIS,2076030,S4-29435   C,HALE DAVID H,Active,Certificate,,10/06/1987,DM,0.02,CFS,1,47,Chelan,T28.0N/R20.0E/03,,,,,Twentyfive Mile Creek,No BLM section match
+G4-24312,2282938,,Arrowleaf Homeowners Assn,Active,Certificate,Final,04/16/1976,"IR,IR",325,GPM,149.4,48,Okanogan,T36.0N/R19.0E/15,,,NE,SW,Groundwater,No BLM section match
+G4-24313(B)C,2086871,,Arrowleaf Homeowners Assn,Active,Certificate,Final,06/16/1976,IR,39.2,GPM,24.38,48,Okanogan,T36.0N/R19.0E/15,,,NE,SW,Groundwater,No BLM section match
+G4-24314(B)C,2086873,,Arrowleaf Homeowners Assn,Active,Certificate,Final,06/16/1976,IR,246,GPM,157.5,48,Okanogan,T36.0N/R19.0E/15,,,NE,SW,Groundwater,No BLM section match
+G4-27643CWRIS,2081039,G4-27643   C,Lost River Airport Tracts Assn Inc,Active,Certificate,Final,09/09/1981,DM,425,GPM,289,48,Okanogan,T36.0N/R19.0E/05,,,NW,SE,Groundwater,No BLM section match
+S4-*11938CWRIS,2079041,05714,EDMONDSON M A,Active,Certificate,,01/02/1953,IR,0.24,CFS,,48,Okanogan,T33.0N/R20.0E/12,,,,,Little Bridge Creek,No BLM section match
+S4-*12998CWRIS,2078789,06397,CAMPBELL J F,Active,Certificate,,06/23/1954,"ST,IR",0.2,CFS,,48,Okanogan,T33.0N/R20.0E/02,,,,,Little Bridge Creek,No BLM section match
+S4-118010CL,2050237,,Early Winters Ditch Company Inc,Active,Claim Long Form,,08/01/1907,"IR,ST",60,CFS,3165,48,Okanogan,T36.0N/R19.0E/26,,,SW,NW,Early Winters Creek,No BLM section match
+S4-22769GWRIS,2077488,S4-22769   G,YOCOM JAMES L,Active,Certificate,,03/14/1974,IR,0.04,CFS,6,48,Okanogan,T33.0N/R20.0E/10,,,SE,SE,Twisp River,No BLM section match
+S4-23720GWRIS,2077179,S4-23720   G,SCHULZ JAMES W,Active,Certificate,Final,06/30/1974,"ST,IR",0.03,CFS,4.25,48,Okanogan,T33.0N/R20.0E/11,,,NW,SW,Unnamed Spring,No BLM section match
+S4-25813GWRIS,2077088,S4-25813   G,HAGEN BARBARA,Active,Certificate,,03/17/1978,IR,0.15,CFS,20,48,Okanogan,T33.0N/R20.0E/15,,,,,Twisp River,No BLM section match
+S4-27136GWRIS,2076491,S4-27136   G,RORVIK DARROW,Active,Certificate,,10/22/1980,IR,0.3,CFS,54,48,Okanogan,T33.0N/R20.0E/10,,,NE,SE,Twisp River,No BLM section match
+S4-27331GWRIS,2076504,S4-27331   G,YOCOM JAMES L,Active,Certificate,,02/20/1981,IR,0.1,CFS,18,48,Okanogan,T33.0N/R20.0E/10,,,NE,SE,Twisp River,No BLM section match
+S4-27904GWRIS,2076350,S4-27904   G,AUSTIN FRANK ET UX,Active,Certificate,,03/16/1982,IR,0.03,CFS,5,48,Okanogan,T33.0N/R20.0E/16,,,NE,NE,Canyon Creek,No BLM section match
+S4-28179GWRIS,2076430,S4-28179   G,BJORK WILLIAM E,Active,Certificate,,04/14/1983,"IR,IR",0.111,CFS,15,48,Okanogan,T33.0N/R20.0E/10,,,,SE,Twisp River,No BLM section match
+S4-28432GWRIS,2076467,S4-28432   G,MORGAN CHARLES,Active,Certificate,,04/11/1984,"DS,IR",0.05,CFS,7,48,Okanogan,T33.0N/R20.0E/15,,,SW,SE,Buttermilk Creek,No BLM section match
+S4-28749,2284135,,Twisp River Properties LLC,Active,Permit,PA Exam,07/10/1985,IR,0.67,CFS,90,48,Okanogan,T33.0N/R20.0E/15,,,,,Buttermilk Creek,No BLM section match
