@@ -4,8 +4,9 @@ Interactive Shiny/Leaflet map of Washington State water rights conditioned with
 **low flow (instream flow) restrictions**. Data refreshes every Monday morning via
 GitHub Actions; Posit Connect Cloud republishes the app from each new commit.
 
-Live app: https://01a11dd4-8660-7ab6-5a08-c6ae18845070.share.connect.posit.cloud
-(the old shinyapps.io address redirects here).
+Live app: https://01a1bd4d-7986-bcca-5c42-73d443ccd94a.share.connect.posit.cloud
+(published from this GitHub repo, republishes on push; the old shinyapps.io
+address redirects here).
 
 ---
 
