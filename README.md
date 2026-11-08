@@ -5,8 +5,13 @@ Interactive Shiny/Leaflet map of Washington State water rights conditioned with
 GitHub Actions; Posit Connect Cloud republishes the app from each new commit.
 
 Live app: https://01a1bd4d-7986-bcca-5c42-73d443ccd94a.share.connect.posit.cloud
-(published from this GitHub repo, republishes on push; the old shinyapps.io
-address redirects here).
+(published from this GitHub repo, republishes on push).
+
+**Redirect chain — don't delete the old content:**
+https://waterwater.shinyapps.io/low-flow-wr/ → old Connect Cloud content
+`01a11dd4-8660-7ab6-5a08-c6ae18845070` → this app. The shinyapps.io redirect target
+can't be changed, so the old content now runs a tiny forwarding app
+(`../low-flow-wr-redirect/app.R`, deploy command in its header).
 
 ---
 
